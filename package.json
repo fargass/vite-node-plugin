@@ -1,0 +1,62 @@
+{
+  "name": "vite-node-plugin",
+  "version": "0.0.9",
+  "description": "Plugin to use Vite with Node.js as dev server",
+  "author": "fargass",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "dist/index.d.ts",
+      "import": "dist/index.mjs",
+      "require": "dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "github.com:fargass/vite-node-plugin.git",
+  "repository": {
+    "type": "git",
+    "url": "github.com:fargass/vite-node-plugin.git"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "node",
+    "istanbul",
+    "plugin",
+    "instrument",
+    "middleware"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "istanbul-lib-instrument": "^6.0.2"
+  },
+  "peerDependencies": {
+    "vite": ">=4.0.0 <6.0.0"
+  },
+  "devDependencies": {
+    "@types/istanbul-lib-instrument": "^1.7.7",
+    "@types/node": "^20.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "@vitest/coverage-istanbul": "^1.4.0",
+    "@vitest/ui": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "rollup": "^4.13.2",
+    "typescript": "^5.4.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.4.0"
+  }
+}
